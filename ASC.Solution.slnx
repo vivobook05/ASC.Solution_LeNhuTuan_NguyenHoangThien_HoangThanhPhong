@@ -2,6 +2,7 @@
   <Project Path="ASC.Business/ASC.Business.csproj" />
   <Project Path="ASC.DataAccess/ASC.DataAccess.csproj" />
   <Project Path="ASC.Model/ASC.Model.csproj" />
+  <Project Path="ASC.Tests/ASC.Tests.csproj" Id="f26811fd-caff-4691-b8a3-e28e20f8625e" />
   <Project Path="ASC.Utilities/ASC.Utilities.csproj" />
   <Project Path="ASC.Web/ASC.Web.csproj" />
 </Solution>

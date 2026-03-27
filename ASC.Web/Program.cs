@@ -40,6 +40,8 @@ builder.Services.AddTransient<IEmailSender, AuthMessageSender>();
 
 builder.Services.AddTransient<ISmsSender, AuthMessageSender>();
 
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(); // them moi 
 //Add IdentitySeed và UnitOfWork
 builder.Services.AddSingleton<IIdentitySeed, IdentitySeed>();
 
@@ -49,6 +51,7 @@ builder.Services.AddRazorPages();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseSession();
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
